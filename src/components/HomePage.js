@@ -35,9 +35,14 @@ const HomePage = ({ navigate }) => (
           </div>
         </div>
 
-        <button onClick={() => navigate('login')} className="main-btn">
-          🔑 Get Started
-        </button>
+        <div className="button-group">
+          <button onClick={() => navigate('login')} className="main-btn">
+            🔑 Login
+          </button>
+          <button onClick={() => navigate('signup')} className="main-btn secondary">
+            ✨ Sign Up
+          </button>
+        </div>
       </div>
     </div>
   </>

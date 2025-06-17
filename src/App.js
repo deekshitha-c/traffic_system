@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HomePage from './components/HomePage';
 import LoginPage from './components/LoginPage';
+import SignUpPage from './components/SignUpPage';
 import SelectJunctionPage from './components/SelectJunctionPage';
 import DashboardPage from './components/DashboardPage';
 import './styles/App.css';
@@ -20,6 +21,8 @@ const App = () => {
         return <HomePage navigate={navigate} />;
       case 'login':
         return <LoginPage navigate={navigate} />;
+      case 'signup':
+        return <SignUpPage navigate={navigate} />;
       case 'select-junction':
         return <SelectJunctionPage navigate={navigate} />;
       case 'dashboard':
